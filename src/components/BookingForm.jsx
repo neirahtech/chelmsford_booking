@@ -109,12 +109,12 @@ const BookingForm = () => {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
-            <form ref={form} onSubmit={sendEmail} className="text-black sm:font-semibold border-[2px] border-teal-600 p-6 my-20 rounded-lg shadow-md w-[80%] flex flex-col sm:flex-row md:gap-6 items-center justify-center">
+            <form ref={form} onSubmit={sendEmail} className="text-black sm:font-semibold border-[2px] border-amber-300 p-6 my-20 rounded-lg shadow-md w-[80%] flex flex-col sm:flex-row md:gap-6 items-center justify-center">
                 <div className='w-[20vw]'>
                     <h1 className="text-4xl font-bold mb-4 text-white">Book Your Car</h1>
                     <img className='hover:scale-105 transition-all duration-300' src={car_image} alt="" />
                 </div>
-                <div className='w-[50vw] bg-teal-400 p-3 sm:p-10 rounded'>
+                <div className='w-[50vw] bg-amber-200 p-3 sm:p-10 rounded'>
                     <div className='flex flex-col md:flex-row justify-between gap-4'>
                         {/* User first name */}
                         <div className='flex-1'>
