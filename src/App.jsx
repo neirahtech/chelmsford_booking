@@ -1,5 +1,5 @@
 import React from 'react'
-import BookingForm from './components/bookingForm'
+import BookingForm from './pages/bookingForm'
 
 const App = () => {
   return (
