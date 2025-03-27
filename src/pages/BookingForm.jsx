@@ -131,9 +131,9 @@ const BookingForm = () => {
                         zIndex: -1,  // Ensure it stays behind the content
                     }}
                 />
-                <form ref={form} onSubmit={sendEmail} className="sm:font-semibold p-6 my-20 rounded-lg shadow-md w-[60%] flex flex-col sm:flex-row md:gap-6 items-center justify-center bg-gray-600 bg-opacity-50">
+                <form ref={form} onSubmit={sendEmail} className="sm:font-semibold p-6 my-20 rounded-lg shadow-md w-[60%] flex flex-col sm:flex-row md:gap-6 items-center justify-center bg-transparent bg-opacity-50">
                     <div className='w-[50vw] text-white p-3 sm:p-10 rounded'>
-                        <p className='text-2xl text-amber-200 mb-3'>Personal Details</p>
+                        <p className='text-2xl text-amber-300 mb-3'>Personal Details</p>
                         <div className='flex flex-col md:flex-row justify-between md:gap-4'>
                             {/* User first name */}
                             <div className='flex-1'>
@@ -203,7 +203,7 @@ const BookingForm = () => {
                                 />
                             </div>
                         </div>
-                        <p className='text-2xl text-amber-200 my-3'>Booking Details</p>
+                        <p className='text-2xl text-amber-300 my-3'>Booking Details</p>
                         <div className='flex flex-col justify-between'>
                             {/* start city */}
                             <div className='flex-1'>
