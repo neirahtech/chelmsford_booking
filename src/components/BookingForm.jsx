@@ -5,7 +5,6 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import emailjs from '@emailjs/browser';
 import car_image from '../assets/banner_car.png';
-import logo from '../assets/logo.png';
 import bg_img from '../assets/bg_image.jpg';
 import bg_img_2 from '../assets/bg_image_2.jpg';
 
@@ -115,25 +114,7 @@ const BookingForm = () => {
 
     return (
         <div>
-            <div className='bg-black flex flex-row justify-evenly items-center p-4'>
-                <img className='w-10 md:w-25' src={logo} alt="Logo" />
-                <h1 className='font-serif text-xl sm:text-3xl font-bold text-amber-300'>Book Your Car</h1>
-                <button className="text-black bg-amber-100 px-3 md:px-6 py-1 rounded-full hover:bg-amber-300 hover:scale-105" onClick={() => window.location.href = "https://chelmsfordmastercabs.com"}>Back</button>
-            </div>
-            <div className="flex flex-col items-center justify-center min-h-screen relative backdrop-invert backdrop-opacity-10 "
-                style={{ backgroundImage: `url(${bg_img})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
-                {/* Overlay using pseudo-element */}
-                <div
-                    style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        backgroundColor: 'rgba(0, 0, 0, 0.5)',  // Dark overlay, adjust opacity as needed
-                        zIndex: -1,  // Ensure it stays behind the content
-                    }}
-                />
+            <div className="flex flex-col items-center justify-center min-h-screen relative bg-gray-900">
                 <form ref={form} onSubmit={sendEmail} className="sm:font-semibold p-6 my-20 rounded-lg shadow-md w-[60%] flex flex-col sm:flex-row md:gap-6 items-center justify-center bg-transparent bg-opacity-50">
                     <div className='w-[50vw] text-white p-3 sm:p-10 rounded'>
                         <p className='text-2xl text-amber-300 mb-3'>Personal Details</p>

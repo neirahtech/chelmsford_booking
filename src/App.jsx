@@ -1,10 +1,10 @@
 import React from 'react'
-import BookingForm from './pages/bookingForm'
+import Booking from './pages/Booking'
 
 const App = () => {
   return (
     <div>
-      <BookingForm />
+      <Booking />
     </div>
   )
 }
