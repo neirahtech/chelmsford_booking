@@ -7,7 +7,7 @@ const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <div className='bg-black h-28 flex flex-row justify-between items-center py-1 px-4 md:px-40'>
+        <div className='bg-black h-40 flex flex-row justify-between items-center py-1 px-4 md:px-10 gap-4'>
             {/* Logo */}
             <div className='flex-1 items-center justify-start'>
                 <img

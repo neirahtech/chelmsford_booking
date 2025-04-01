@@ -53,9 +53,24 @@ const Footer = () => {
 
             {/* ------ Copyright ------- */}
             <div className='flex flex-col md:flex-row items-center justify-evenly text-lg'>
-                <p className='py-5 text-center'><span className='hover:text-red-500 cursor-pointer' onClick={() => window.location.href = "https://chelmsfordmastercabs.com/"}>© 2025 Chelmsford Mastercabs - Powered by </span><span className='hover:text-red-500 cursor-pointer' onClick={() => window.location.href = "https://neirahtech.com/"}>Nierahtech</span></p>
-                <p className='hover:underline cursor-pointer' onClick={() => window.location.href = "https://chelmsfordmastercabs.com/privacy-policy/"}>Privacy Policy</p>
-                <p className='hover:underline cursor-pointer' onClick={() => window.location.href = "https://chelmsfordmastercabs.com/terms-conditions/"}>Terms & Conditions</p>
+                <p
+                    className='py-5 text-center'>
+                    <span
+                        className='hover:text-red-500 cursor-pointer'
+                        onClick={() => window.location.href = "https://chelmsfordmastercabs.com/"}
+                    >
+                        © 2025 Chelmsford Mastercabs - Powered by
+                    </span>
+                    <span className='hover:text-red-500 cursor-pointer'
+                        onClick={() => window.location.href = "https://neirahtech.com/"}>
+                        <span className='ml-1'>Nierahtech</span>
+                    </span>
+                </p>
+                <div className='flex flex-col md:flex-row gap-4'>
+                    <p className='hover:underline cursor-pointer' onClick={() => window.location.href = "https://chelmsfordmastercabs.com/privacy-policy/"}>Privacy Policy</p>
+                    <p className='hover:underline cursor-pointer' onClick={() => window.location.href = "https://chelmsfordmastercabs.com/terms-conditions/"}>Terms & Conditions</p>
+                </div>
+
             </div>
         </div>
     )
