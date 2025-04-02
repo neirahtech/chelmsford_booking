@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddressAutocomplete = ({ value, onChange, onSelect }) => {
+const AddressAutocomplete = ({ value, onChange, onSelect, name }) => {
     const [suggestions, setSuggestions] = useState([]);
 
     const handleSearch = async (input) => {
@@ -12,7 +12,7 @@ const AddressAutocomplete = ({ value, onChange, onSelect }) => {
             );
             const data = await response.json();
 
-            console.log("API Response:", data); // Debugging
+            console.log("API Response:", data); 
 
             setSuggestions(data); // Show all results without filtering
         } else {
@@ -24,6 +24,7 @@ const AddressAutocomplete = ({ value, onChange, onSelect }) => {
         <div className="relative w-full">
             <input
                 type="text"
+                name={name}
                 value={value}
                 onChange={(e) => handleSearch(e.target.value)}
                 placeholder="Enter city, address, or postcode"
@@ -37,7 +38,7 @@ const AddressAutocomplete = ({ value, onChange, onSelect }) => {
                             onClick={() => {
                                 onChange(place.display_name);
                                 onSelect(place);
-                                setSuggestions([]); // Clear after selecting
+                                setSuggestions([]);
                             }}
                             className="p-2 cursor-pointer hover:bg-gray-200"
                         >
